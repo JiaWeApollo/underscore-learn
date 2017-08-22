@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>underscore</title>
+	</head>
+	<body>
+	</body>
+	<script src="js/object.js" type="text/javascript" charset="utf-8"></script>
+	<script src="underscore-1.8.3.js/src/underscore-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	function Person(name,age){
+		this.name=name;
+		this.age=age;
+	}
+	Person.prototype.sayName=function(){
+		alert(this.name);
+	}
+	var person=new Person("jiawei",25);
+	Object.defineProperty(person,"sex",{
+		value:"男",
+		enumerable:false
+	})
+    console.log($.keys(person));
+	</script>
+</html>
